@@ -19,7 +19,9 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="css/landing-page.min.css" rel="stylesheet">
+<!--commented by sanjiv   <link href="css/landing-page.min.css" rel="stylesheet">
+ -->
+   <link href="css/landing-page.css" rel="stylesheet">
 
 </head>
 
@@ -41,31 +43,41 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a> -->
+            <a class="nav-link" href="#servicessection">
               Services
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+            <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="portfolio-1-col.html">Oracle Banking Digital Experience Implementation</a>
               <a class="dropdown-item" href="portfolio-2-col.html">Flexcube Internet Banking Implementation</a>
               <a class="dropdown-item" href="portfolio-3-col.html">Flexcube Core Banking Implementation</a>
               <a class="dropdown-item" href="portfolio-1-col.html">Oracle Banking Digital Experience Managed Services</a>
               <a class="dropdown-item" href="portfolio-2-col.html">Flexcube Internet Banking Managed Services</a>
               <a class="dropdown-item" href="portfolio-3-col.html">Flexcube Core Banking Managed Services</a>
-            </div>
+            </div> -->
           </li>
 
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#clientsection">Clients</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#contactusdiv">Contact</a>
+          </li>
+
+          
+
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Portfolio
             </a>
@@ -73,10 +85,10 @@
               <a class="dropdown-item" href="portfolio-1-col.html">JMR Infotech</a>
               <a class="dropdown-item" href="portfolio-2-col.html">IN2IT</a>
               <a class="dropdown-item" href="portfolio-3-col.html">FASYL</a>
-              <!-- <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a> -->
+             <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
             </div>
-          </li>
+          </li> -->
 
        <!--    <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -130,7 +142,7 @@
   </header>
 
   <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
+  <section class="features-icons bg-light text-center" id="servicessection">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -140,8 +152,35 @@
             </div>
             <h3>Internet Banking</h3>
             <p class="lead mb-0">Our experience in Internet Banking implementations enables us to help clients in ensuring there solution works efficiently.</p>
+            <br/>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ibankmodal">More</button>
           </div>
         </div>
+
+      <!-- Modal : added by sanjiv for internet banking modal -->
+      <div class="modal fade" id="ibankmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Internet Banking offerings</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
@@ -149,8 +188,32 @@
             </div>
             <h3>Core Banking</h3>
             <p class="lead mb-0">We offer extensive experience in supporting Oracle Flexcube core banking solution.</p>
+            <br/>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#corebankmodal">More</button>
           </div>
         </div>
+
+        <!-- Modal : added by sanjiv for core banking modal -->
+      <div class="modal fade" id="corebankmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Core Banking offerings</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
@@ -158,8 +221,32 @@
             </div>
             <h3>Application development</h3>
             <p class="lead mb-0">We offer application development services that cater to the various requirements of the bank.</p>
+            <br/>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#appbankmodal">More</button>
           </div>
         </div>
+
+         <!-- Modal : added by sanjiv for app banking modal -->
+      <div class="modal fade" id="appbankmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Mobile Banking offerings</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       </div>
     </div>
   </section>
@@ -230,6 +317,55 @@
     </div>
   </section>
 
+<!-- Client section-->
+  <!-- <section class="testimonials clients text-center bg-light"> -->
+    <section class="testimonials clients text-center" id="clientsection">
+    <!-- <div class="container"> -->
+      <h2 class="mb-5">Clients</h2>
+       <!-- <div class="row"> -->
+      <!--  <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">            
+             <img class="img-fluid     mb-3" src="img/supportservice2.jpg" alt="">
+<h5>How will we support?</h5>
+            <p class="font-weight-light mb-0">Our consultants will be available round the clock to support bank’s issues assisting in analysis and feedback with resolution at the earliest.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+        
+             <img class="img-fluid mb-3" src="img/agile4.png" alt="">
+
+  <h5>What are we following?</h5>
+            <p class="font-weight-light mb-0">We follow agile methodology for customizations to improve the productivity, quality and ultimately timelines of the deliverable.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+             
+            <img class="img-fluid mb-3" src="img/bestprice1.jpg" alt="">
+
+ <h5>How much will it cost?</h5>
+            <p class="font-weight-light mb-0">We as a company are offering our services at the best price as compared to our competitors with all our expertise put together with quality</p>
+          </div>
+        </div>
+      </div>-->
+
+
+     <section class="customer-logos slider">
+      <div class="slide"><a href="https://www.jmrinfotech.com/" target="_blank" alt="JMR"><img src="img/jmrlogo.png"></a></div>
+      <div class="slide"><a href="http://www.in2ittech.co.za/" target="_blank" alt="IN@IT"><img src="img/in2itlogo.png"></a></div>
+      <div class="slide"><a href="https://www.resbank.co.za/Pages/default.aspx" target="_blank" alt="SARB"><img src="img/sarblogo.png"></a></div>
+      <!-- <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div> -->
+    </section>
+  <!-- </div> -->
+   </section>
+
+
   <!-- Call to Action -->
   <!-- <section class="call-to-action text-white text-center">
     <div class="overlay"></div>
@@ -255,19 +391,16 @@
   </section> -->
 
   <!-- Footer -->
-  <footer class="footer bg-light">
+  <!-- <footer class="footer bg-light"> -->
+    <footer class="footer py-5 bg-dark">
     <div class="container">
+      <div class="row col-lg-6 h-100 text-center text-lg-left my-auto contactus" id="contactusdiv">
+        Contact us by Email : <span><i>info@finexta.com</i></span>
+      </div>
+      <<div class="row"></div>
       <div class="row">
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
           <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
               <a href="#">Terms of Use</a>
             </li>
@@ -275,6 +408,14 @@
             <li class="list-inline-item">
               <a href="#">Privacy Policy</a>
             </li>
+            <!-- <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li> -->
           </ul>
           <p class="text-muted small mb-4 mb-lg-0">&copy; Finexta IT Solutions LLP 2019. All Rights Reserved.</p>
         </div>
@@ -304,6 +445,11 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!--below scripts added by sanjiv for slider-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="vendor/bootstrap/js/slider.js"></script>
+
 
 </body>
 
