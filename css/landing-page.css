@@ -43,7 +43,7 @@ header.masthead h1 {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
+    padding-top: 14rem;/*sanjiv changed from 12 to 14*/
     padding-bottom: 12rem;
   }
   header.masthead h1 {
@@ -150,8 +150,34 @@ a:hover {
 }
 
 .contactus{
-  color: rgba(255,255,255,.5);
+  color: white;
 }
+
+/*Added by sanjiv*/
+a{
+  color: white;
+}
+
+a:hover{
+  color: #F9B235;
+}
+
+.copyright{
+  color: white;
+}
+
+.bg-dark {
+  background-color: #333E50 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #F9B235;
+}
+
 
 
 /*slider code starts*/
