@@ -320,3 +320,18 @@ a:hover{
 }
 /*slider code ends*/
 /*added by sanjiv ends*/
+ .mobilelogo1 {
+    height: 65px;
+  }
+  .mobilelogo2 {
+    height: 43px;
+  }
+
+@media (max-width: 450px) {
+  .mobilelogo1 {
+    height: 45px;
+  }
+  .mobilelogo2 {
+    height: 35px;
+  }
+}
