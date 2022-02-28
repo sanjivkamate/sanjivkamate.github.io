@@ -1,3 +1,3 @@
 ## Copyright and License
 
-Copyright 2021 Finexta InfoTech Private Limited.
+Copyright 2022 Finexta InfoTech Private Limited.
